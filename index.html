@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricco Consultoria</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      /* Cor customizada para o CTA principal */
+      .cta-button {
+        background-color: #10b981; /* Verde Esmeralda (Tailwind 'emerald-500') */
+        color: white;
+      }
+      .cta-button:hover {
+        background-color: #059669; /* Verde Esmeralda mais escuro */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div
+        class="container mx-auto max-w-6xl px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-gray-800">
+          Cricco <span class="text-emerald-600">Consultoria</span>
+        </h1>
+        <a
+          href="#cotacao"
+          class="cta-button font-medium py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5"
+        >
+          Avalie sua Carta
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section class="bg-white pt-16 pb-20 md:pt-24 md:pb-28">
+        <div class="container mx-auto max-w-6xl px-4 text-center">
+          <h2
+            class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4"
+          >
+            Venda sua Carta de Consórcio com Rapidez e Segurança
+          </h2>
+          <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            Transforme sua cota em dinheiro na conta. Receba a melhor avaliação
+            do mercado de forma 100% digital e sem burocracia.
+          </p>
+          <a
+            href="#cotacao"
+            class="cta-button text-lg font-bold py-4 px-10 rounded-lg shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl"
+          >
+            Quero Fazer uma Cotação Grátis
+          </a>
+          <p class="text-sm text-gray-500 mt-4">
+            Pagamento via PIX em até 24h após a assinatura.
+          </p>
+        </div>
+      </section>
+
+      <!-- Seção de "Tipos de Cartas" -->
+      <section class="py-16 bg-gray-100">
+        <div class="container mx-auto max-w-6xl px-4">
+          <h3 class="text-center text-3xl font-bold text-gray-800 mb-12">
+            Compramos Diversos Tipos de Cartas
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <img
+                src="https://placehold.co/80x80/10B981/FFFFFF?text=Contemplada"
+                alt="Ícone de carta contemplada"
+                class="mx-auto mb-4 rounded-full"
+              />
+              <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                Contempladas
+              </h4>
+              <p class="text-gray-600">
+                Já foi sorteado ou deu lance? Compramos sua carta e pagamos à
+                vista.
+              </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <img
+                src="https://placehold.co/80x80/3B82F6/FFFFFF?text=N%C3%A3o+Contemplada"
+                alt="Ícone de carta não contemplada"
+                class="mx-auto mb-4 rounded-full"
+              />
+              <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                Não Contempladas
+              </h4>
+              <p class="text-gray-600">
+                Não quer mais esperar? Avaliamos sua carta e compramos agora
+                mesmo.
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <img
+                src="https://placehold.co/80x80/EF4444/FFFFFF?text=Em+Atraso"
+                alt="Ícone de carta em atraso"
+                class="mx-auto mb-4 rounded-full"
+              />
+              <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                Em Atraso
+              </h4>
+              <p class="text-gray-600">
+                Está com parcelas atrasadas? Negociamos e encontramos a melhor
+                solução.
+              </p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <img
+                src="https://placehold.co/80x80/F59E0B/FFFFFF?text=Todos+os+Bens"
+                alt="Ícone de todos os bens"
+                class="mx-auto mb-4 rounded-full"
+              />
+              <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                Imóveis e Veículos
+              </h4>
+              <p class="text-gray-600">
+                Compramos cartas de consórcio de carro, moto, caminhão, casas e
+                terrenos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Como Funciona -->
+      <section class="py-20 bg-white">
+        <div class="container mx-auto max-w-6xl px-4">
+          <h3 class="text-center text-3xl font-bold text-gray-800 mb-16">
+            Nosso Processo é Simples e Rápido
+          </h3>
+          <div class="relative">
+            <!-- Linha de conexão (visível em telas maiores) -->
+            <div
+              class="hidden md:block absolute top-1/2 left-0 right-0 h-1 border-t-2 border-dashed border-gray-300 -translate-y-1/2"
+            ></div>
+
+            <div class="relative grid grid-cols-1 md:grid-cols-3 gap-12">
+              <!-- Passo 1 -->
+              <div class="text-center z-10">
+                <div
+                  class="bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg"
+                >
+                  1
+                </div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                  Solicite a Cotação
+                </h4>
+                <p class="text-gray-600">
+                  Preencha nosso formulário rápido com os dados da sua carta de
+                  consórcio.
+                </p>
+              </div>
+              <!-- Passo 2 -->
+              <div class="text-center z-10">
+                <div
+                  class="bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg"
+                >
+                  2
+                </div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                  Receba a Proposta
+                </h4>
+                <p class="text-gray-600">
+                  Nossos especialistas analisam sua carta e enviam a melhor
+                  oferta do mercado.
+                </p>
+              </div>
+              <!-- Passo 3 -->
+              <div class="text-center z-10">
+                <div
+                  class="bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg"
+                >
+                  3
+                </div>
+                <h4 class="text-xl font-semibold text-gray-900 mb-2">
+                  Receba o Dinheiro
+                </h4>
+                <p class="text-gray-600">
+                  Após a assinatura digital do contrato, o dinheiro cai na sua
+                  conta via PIX.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Cotação (Formulário) -->
+      <section id="cotacao" class="py-20 bg-gray-100">
+        <div class="container mx-auto max-w-6xl px-4">
+          <div class="flex flex-wrap md:flex-nowrap gap-12 items-center">
+            <!-- Coluna de Texto -->
+            <div class="w-full md:w-1/2">
+              <h3 class="text-3xl font-bold text-gray-800 mb-4">
+                Receba sua Cotação Gratuita
+              </h3>
+              <p class="text-lg text-gray-600 mb-6">
+                Preencha o formulário ao lado e descubra quanto vale sua carta
+                de consórcio. É rápido, seguro e sem compromisso!
+              </p>
+              <ul class="space-y-4">
+                <li class="flex items-center">
+                  <span
+                    class="bg-emerald-100 text-emerald-700 rounded-full p-2 mr-3"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-700 font-medium"
+                    >Avaliação justa e transparente</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="bg-emerald-100 text-emerald-700 rounded-full p-2 mr-3"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0c-1.657 0-3-.895-3-2s1.343-2 3-2 3-.895 3-2-1.343-2-3-2m0 8c1.11 0 2.08-.402 2.599-1M12 16v1m0-1v-8"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-700 font-medium"
+                    >Pagamento rápido via PIX</span
+                  >
+                </li>
+                <li class="flex items-center">
+                  <span
+                    class="bg-emerald-100 text-emerald-700 rounded-full p-2 mr-3"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-700 font-medium"
+                    >Processo 100% seguro e sigiloso</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Coluna do Formulário -->
+            <div class="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-2xl">
+              <form id="form-cotacao">
+                <div class="mb-4">
+                  <label
+                    for="nome"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Nome Completo</label
+                  >
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
+                    placeholder="Seu nome"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="whatsapp"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >WhatsApp</label
+                  >
+                  <input
+                    type="tel"
+                    id="whatsapp"
+                    name="whatsapp"
+                    required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
+                    placeholder="(XX) XXXXX-XXXX"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
+                    placeholder="seu.email@exemplo.com"
+                  />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label
+                      for="valor_carta"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Valor da Carta (R$)</label
+                    >
+                    <input
+                      type="text"
+                      id="valor_carta"
+                      name="valor_carta"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
+                      placeholder="Ex: 50.000"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="valor_pago"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Valor Pago (R$)</label
+                    >
+                    <input
+                      type="text"
+                      id="valor_pago"
+                      name="valor_pago"
+                      required
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
+                      placeholder="Ex: 10.000"
+                    />
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <label
+                    for="administradora"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Administradora</label
+                  >
+                  <input
+                    type="text"
+                    id="administradora"
+                    name="administradora"
+                    required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-emerald-500 focus:border-emerald-500"
+                    placeholder="Ex: Porto Seguro, Itaú"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Sua carta está:</label
+                  >
+                  <div class="flex space-x-4">
+                    <label class="flex items-center">
+                      <input
+                        type="radio"
+                        name="status_carta"
+                        value="contemplada"
+                        class="focus:ring-emerald-500 h-4 w-4 text-emerald-600 border-gray-300"
+                      />
+                      <span class="ml-2 text-gray-700">Contemplada</span>
+                    </label>
+                    <label class="flex items-center">
+                      <input
+                        type="radio"
+                        name="status_carta"
+                        value="nao_contemplada"
+                        class="focus:ring-emerald-500 h-4 w-4 text-emerald-600 border-gray-300"
+                      />
+                      <span class="ml-2 text-gray-700">Não Contemplada</span>
+                    </label>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full cta-button text-lg font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5"
+                >
+                  Receber Melhor Oferta
+                </button>
+              </form>
+              <!-- Mensagem de sucesso (oculta por padrão) -->
+              <div
+                id="success-message"
+                class="hidden mt-6 p-4 bg-emerald-100 border border-emerald-300 text-emerald-800 rounded-lg text-center"
+              >
+                Obrigado! Recebemos sua solicitação. Em breve um de nossos
+                especialistas entrará em contato.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-20 bg-white">
+        <div class="container mx-auto max-w-3xl px-4">
+          <h3 class="text-center text-3xl font-bold text-gray-800 mb-12">
+            Perguntas Frequentes (FAQ)
+          </h3>
+          <div class="space-y-6">
+            <!-- Pergunta 1 -->
+            <div>
+              <h4 class="font-semibold text-lg text-gray-900 mb-2">
+                É seguro vender minha carta de consórcio?
+              </h4>
+              <p class="text-gray-600">
+                Sim. Todo o processo é feito com base legal, através de um
+                contrato de cessão de direitos assinado por ambas as partes e
+                registrado em cartório (se necessário). Só trabalhamos com as
+                maiores e mais seguras administradoras do país.
+              </p>
+            </div>
+            <!-- Pergunta 2 -->
+            <div>
+              <h4 class="font-semibold text-lg text-gray-900 mb-2">
+                Em quanto tempo eu recebo o dinheiro?
+              </h4>
+              <p class="text-gray-600">
+                O pagamento é feito via PIX imediatamente após a conclusão da
+                transferência de titularidade junto à administradora e a
+                assinatura do contrato. Geralmente, todo o processo leva de 24 a
+                48 horas úteis.
+              </p>
+            </div>
+            <!-- Pergunta 3 -->
+            <div>
+              <h4 class="font-semibold text-lg text-gray-900 mb-2">
+                Vocês compram cartas com parcelas atrasadas?
+              </h4>
+              <p class="text-gray-600">
+                Sim. Analisamos casos de cartas com parcelas em atraso e até
+                mesmo cartas canceladas. Envie sua cotação e nossa equipe
+                especializada analisará a viabilidade e apresentará a melhor
+                proposta possível para quitar a pendência e comprar sua carta.
+              </p>
+            </div>
+            <!-- Pergunta 4 -->
+            <div>
+              <h4 class="font-semibold text-lg text-gray-900 mb-2">
+                Por que devo vender minha carta para vocês?
+              </h4>
+              <p class="text-gray-600">
+                Oferecemos a melhor avaliação do mercado, garantindo um valor
+                justo pela sua carta. Nosso processo é 100% transparente, ágil e
+                sem burocracia. Você recebe seu dinheiro rapidamente e com total
+                segurança.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+      <div class="container mx-auto max-w-6xl px-4 text-center">
+        <h3 class="text-xl font-bold text-white mb-2">
+          Cricco <span class="text-emerald-500">Consultoria</span>
+        </h3>
+        <p class="mb-4">Transformando consórcios em dinheiro rápido.</p>
+        <div class="flex justify-center space-x-6 mb-6">
+          <a href="#" class="hover:text-white">Início</a>
+          <a href="#cotacao" class="hover:text-white">Fazer Cotação</a>
+          <a href="#" class="hover:text-white">Quem Somos (link)</a>
+        </div>
+        <p class="text-sm">
+          &copy; 2025 Cricco Consultoria. Todos os direitos reservados. CNPJ:
+          XX.XXX.XXX/0001-XX.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script para simular o envio do formulário -->
+    <script>
+      document
+        .getElementById("form-cotacao")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Impede o envio real do formulário
+
+          // Simulação de envio
+          // Aqui você integraria com seu backend ou ferramenta de CRM
+
+          // Exibe a mensagem de sucesso
+          document.getElementById("success-message").classList.remove("hidden");
+
+          // Opcional: rola a tela para a mensagem de sucesso
+          document
+            .getElementById("success-message")
+            .scrollIntoView({ behavior: "smooth" });
+
+          // Limpa o formulário após um tempo (opcional)
+          setTimeout(() => {
+            e.target.reset();
+            document.getElementById("success-message").classList.add("hidden");
+          }, 5000); // Esconde a mensagem após 5 segundos
+        });
+    </script>
+  </body>
+</html>
