@@ -8,6 +8,7 @@ load_dotenv()
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID_VENDEDOR = os.getenv("CHAT_ID_VENDEDOR")
+CHAT_ID_EU = os.getenv("CHAT_ID_EU")
 
 @app.route("/")
 def home():
@@ -32,10 +33,11 @@ def receber_cotacao():
     )
 
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    payload = {
-        "chat_id": CHAT_ID_VENDEDOR,
-        "text": mensagem
-    }
+    for chat_id in [CHAT_ID_EU, CHAT_ID_VENDEDOR]:
+        payload = {
+            "chat_id": chat_id,
+            "text": mensagem
+        }
 
     try:
         response = requests.post(url, json=payload)
