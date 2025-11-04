@@ -29,14 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       try {
-        const resposta = await fetch(
-          "https://landing-page-8049.onrender.com/api/cotacao",
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(dados),
-          }
-        );
+        const resposta = await fetch("http://127.0.0.1:5000//api/cotacao", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(dados),
+        });
 
         const resultado = await resposta.json();
         console.log("Resposta do servidor:", resultado);
