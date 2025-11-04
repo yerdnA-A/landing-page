@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
-import psycopg2
 import os
 from twilio.rest import Client  # <--- integração WhatsApp
 from dotenv import load_dotenv
