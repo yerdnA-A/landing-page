@@ -72,4 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  if (resultado.status === "erro") {
+    if (errorMessage) {
+      errorMessage.textContent =
+        "Erro ao enviar formulário: " + JSON.stringify(resultado.mensagem);
+      errorMessage.classList.remove("hidden");
+      errorMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+    } else {
+      alert("Erro ao enviar formulário: " + JSON.stringify(resultado.mensagem));
+    }
+  }
 });
