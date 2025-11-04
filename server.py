@@ -1,16 +1,21 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)  # permite requisições do front-end
 
+# --- ROTA PARA A PÁGINA PRINCIPAL ---
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+# --- ROTA PARA RECEBER OS DADOS DO FORMULÁRIO ---
 @app.route("/api/cotacao", methods=["POST"])
 def receber_cotacao():
     dados = request.get_json()
     print("Dados recebidos:", dados)
     
-    # Aqui você pode salvar num arquivo, banco de dados, etc.
-    # Exemplo simples: salva em um arquivo local
+    # Exemplo simples: salva os dados localmente
     with open("dados.json", "a", encoding="utf-8") as f:
         f.write(str(dados) + "\n")
 
