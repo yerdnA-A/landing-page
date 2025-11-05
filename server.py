@@ -12,6 +12,13 @@ CHAT_ID_VENDEDOR = os.getenv("CHAT_ID_VENDEDOR")
 @app.route("/")
 def home():
     return render_template("index.html")
+@app.route('/termos-de-uso')
+def termos():
+    return render_template('termos-de-uso.html')
+
+@app.route('/politica-de-privacidade')
+def politica():
+    return render_template('politica-de-privacidade.html')
 
 @app.route("/api/cotacao", methods=["POST"])
 def receber_cotacao():
