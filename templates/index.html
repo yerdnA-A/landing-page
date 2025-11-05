@@ -28,6 +28,19 @@
         background-color: #059669; /* Verde Esmeralda mais escuro */
       }
     </style>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17706302955"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17706302955");
+    </script>
   </head>
   <body class="bg-gray-50">
     <!-- Header -->
@@ -57,8 +70,8 @@
             Venda sua Carta de Consórcio com Rapidez e Segurança
           </h2>
           <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Transforme sua cota em dinheiro na conta. Receba a melhor avaliação
-            do mercado de forma 100% digital e sem burocracia.
+            Transforme sua cota em dinheiro na conta. Receba uma proposta justa
+            de acordo com o mercado de forma 100% digital e sem burocracia.
           </p>
           <a
             href="#cotacao"
@@ -66,7 +79,7 @@
           >
             Quero Fazer uma Cotação Grátis
           </a>
-          <p class="text-sm text-gray-500 mt-4">Pagamento via PIX na hora</p>
+          <p class="text-sm text-gray-500 mt-4">Pagamento rápido via PIX</p>
         </div>
       </section>
 
@@ -118,7 +131,7 @@
                 Em Atraso
               </h4>
               <p class="text-gray-600">
-                Está com parcelas atrasadas? Negociamos e encontramos a melhor
+                Está com parcelas atrasadas? Negociamos e encontramos uma ótima
                 solução.
               </p>
             </div>
@@ -180,8 +193,8 @@
                   Receba a Proposta
                 </h4>
                 <p class="text-gray-600">
-                  Nossos especialistas analisam sua carta e enviam a melhor
-                  oferta do mercado.
+                  Nossos especialistas analisam sua carta e enviam uma proposta
+                  justa
                 </p>
               </div>
               <!-- Passo 3 -->
@@ -414,7 +427,7 @@
                   type="submit"
                   class="w-full cta-button text-lg font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5"
                 >
-                  Receber Melhor Oferta
+                  Solicitar Avaliação Agora
                 </button>
               </form>
               <!-- Mensagem de sucesso (oculta por padrão) -->
@@ -422,8 +435,18 @@
                 id="success-message"
                 class="hidden mt-6 p-4 bg-emerald-100 border border-emerald-300 text-emerald-800 rounded-lg text-center"
               >
-                Obrigado! Recebemos sua solicitação. Em breve um de nossos
-                especialistas entrará em contato.
+                <h4 class="font-bold text-lg mb-2">Obrigado!</h4>
+                <p class="mb-4">
+                  Recebemos sua solicitação. Um especialista entrará em contato
+                  em breve.
+                </p>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5519990154092&text=Olá, acabei de pedir uma cotação no site."
+                  target="_blank"
+                  class="cta-button font-medium py-2 px-5 rounded-lg shadow-md inline-block"
+                >
+                  Falar no WhatsApp Agora
+                </a>
               </div>
             </div>
           </div>
@@ -479,9 +502,9 @@
                 Por que devo vender minha carta para vocês?
               </h4>
               <p class="text-gray-600">
-                Oferecemos a melhor avaliação do mercado, garantindo um valor
-                justo pela sua carta. Nosso processo é 100% transparente, ágil e
-                sem burocracia. Você recebe seu dinheiro rapidamente e com total
+                Oferecemos uma proposta justa, garantindo um valor justo pela
+                sua carta. Nosso processo é 100% transparente, ágil e sem
+                burocracia. Você recebe seu dinheiro rapidamente e com total
                 segurança.
               </p>
             </div>
@@ -490,21 +513,42 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-12">
-      <div class="container mx-auto max-w-6xl px-4 text-center">
-        <h3 class="text-xl font-bold text-white mb-2">
-          Cricco <span class="text-emerald-500">Consultoria</span>
-        </h3>
-        <p class="mb-4">Transformando consórcios em dinheiro rápido.</p>
-        <div class="flex justify-center space-x-6 mb-6">
-          <a href="#" class="hover:text-white">Início</a>
-          <a href="#cotacao" class="hover:text-white">Fazer Cotação</a>
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-300 py-12 px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div>
+          <h4 class="font-semibold text-white mb-2">Contato</h4>
+          <p>Telefone: (19) 99015-4092</p>
+          <p>WhatsApp: (19) 99015-4092</p>
+          <p>Email: andreycriccoconsultoria@gmail.com</p>
         </div>
-        <p class="text-sm">
-          &copy; 2025 Cricco Consultoria. Todos os direitos reservados. CNPJ:
-          58.150.206/0001-88.
+        <div>
+          <h4 class="font-semibold text-white mb-2">Endereço</h4>
+          <p>Rua Piquete, 1079</p>
+          <p>Nova Campinas, Campinas - SP</p>
+          <p>CEP: 13092-496</p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 pt-6 mt-8 text-center md:text-left">
+        <p class="text-sm mb-4 md:mb-0">
+          &copy; 2025 Cricco Consultoria. Todos os direitos reservados.
         </p>
+        <div class="flex justify-center md:justify-end space-x-4 text-sm">
+          <a
+            href="termos-de-uso.html"
+            class="hover:text-white"
+            onclick="gtag('event', 'click_termos', {'event_category': 'Navegação', 'event_label': 'Termos de Uso'});"
+            >Termos de Uso</a
+          >
+          <a
+            href="politica-de-privacidade.html"
+            class="hover:text-white"
+            onclick="gtag('event', 'click_politica_footer', {'event_category': 'Navegação', 'event_label': 'Política de Privacidade'});"
+            >Política de Privacidade</a
+          >
+        </div>
+        <p class="text-xs text-gray-400 mt-6">CNPJ: 58.150.206/0001-88</p>
       </div>
     </footer>
 

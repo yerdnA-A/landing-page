@@ -39,12 +39,25 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Resposta do servidor:", resultado);
 
         if (resultado.status === "sucesso") {
+          // Exibe mensagem de sucesso
           if (successMessage) {
             successMessage.classList.remove("hidden");
             successMessage.scrollIntoView({
               behavior: "smooth",
               block: "center",
             });
+          }
+
+          // 🔹 Dispara o evento de conversão do Google Ads
+          if (typeof gtag !== "undefined") {
+            gtag("event", "conversion", {
+              send_to: "AW-17706302955/sgeoCNy6v7obEOv7gvtB",
+            });
+            console.log("Evento de conversão enviado para o Google Ads");
+          } else {
+            console.warn(
+              "gtag não encontrado — verifique se o script do Google Ads está no <head>"
+            );
           }
         } else {
           const msg =
