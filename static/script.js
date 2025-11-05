@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // 🔹 Dispara o evento de conversão do Google Ads
           if (typeof gtag !== "undefined") {
             gtag("event", "conversion", {
-              send_to: "AW-17706302955/sgeoCNy6v7obEOv7gvtB",
+              send_to: "AW-17706302955/v1zPCKuKybobEOv7gvtB",
             });
             console.log("Evento de conversão enviado para o Google Ads");
           } else {
